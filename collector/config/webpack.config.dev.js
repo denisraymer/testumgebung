@@ -4,8 +4,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const createMainConfig = require('./webpack.config.main');
 
-function createDevConfig(rootDir, env) {
-  const configMain = createMainConfig(rootDir, env);
+function createDevConfig(rootDir) {
+  const configMain = createMainConfig(rootDir);
 
   const devConfig = {
     mode: 'development',
