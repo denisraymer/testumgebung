@@ -38,7 +38,8 @@
   },
   "workspaces": [
     "shared",
-    "collector"
+    "collector",
+    "scheduler"
   ],
   "dependencies": {
     "react": "^18.0.0",
@@ -47,6 +48,8 @@
   "scripts": {
     "start:collector": "cd ./collector && yarn dev",
     "build:collector": "cd ./collector && yarn build",
+    "start:scheduler": "cd ./scheduler && yarn dev",
+    "build:scheduler": "cd ./scheduler && yarn build",
     "start-sb": "start-storybook -p 6006",
     "build-sb": "build-storybook"
   }
