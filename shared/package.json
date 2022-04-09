@@ -2,9 +2,10 @@
   "name": "shared",
   "version": "1.0.0",
   "description": "Workspace for the component library and storybook",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "files": ["dist"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:lib": "webpack --mode=production"
   },
   "license": "ISC"
 }

@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-import { Button } from 'shared/lib';
+import { Button } from 'shared';
 
-export function App({tab}: {tab: string}) {
+export function App({ tab }: { tab: string }) {
   return (
-    <Button text="Текст кнопки">
-      {tab}
-    </Button>
+    <Fragment>
+      <h1>TEST</h1>
+      <Button text="Текст кнопки">
+        {tab}
+      </Button>
+    </Fragment>
   )
 }
