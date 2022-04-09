@@ -17,10 +17,12 @@
     "@storybook/addon-essentials": "^6.4.20",
     "@storybook/addon-interactions": "^6.4.20",
     "@storybook/addon-links": "^6.4.20",
+    "@storybook/addons": "^6.4.21",
     "@storybook/builder-webpack5": "^6.4.20",
     "@storybook/manager-webpack5": "^6.4.20",
     "@storybook/react": "^6.4.20",
     "@storybook/testing-library": "^0.0.9",
+    "@storybook/theming": "^6.4.21",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "@zerollup/ts-transform-paths": "^1.7.18",
@@ -54,7 +56,7 @@
     "start:scheduler": "cd ./scheduler && yarn dev",
     "build:scheduler": "cd ./scheduler && yarn build",
     "build:lib": "cd ./shared && yarn build",
-    "start-sb": "start-storybook -p 6006",
-    "build-sb": "build-storybook"
+    "start:sb": "start-storybook -p 6006",
+    "build:sb": "build-storybook"
   }
 }

@@ -1,3 +1,7 @@
+import { themes } from '@storybook/theming';
+
+// import YourTheme from './YourTheme';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +10,10 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  layout: 'centered',
+  docs: {
+    // theme: YourTheme,
+    // theme: themes.dark,
+    theme: themes.light,
+  }
 }
