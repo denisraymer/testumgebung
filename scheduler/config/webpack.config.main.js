@@ -1,6 +1,7 @@
-const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const path = require('path');
 
 function createMainConfig(rootDir) {
   const pathResolve = (source) => path.resolve(rootDir, source);

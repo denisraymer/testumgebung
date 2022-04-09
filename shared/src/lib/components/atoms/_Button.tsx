@@ -1,12 +1,18 @@
-import * as React from 'react';
+import React from 'react';
 
-export const Button = () => (
+interface IButton{
+  text: string
+}
+
+export const Button: React.FC<IButton> = ({
+  text = 'Кнопка из библиотеки'
+}) => (
   <button style={{
     backgroundColor: 'blue',
     width: '150px',
     height: '50px',
     color: 'white'
   }}>
-    Кнопка из библиотеки
+    {text}
   </button>
 );

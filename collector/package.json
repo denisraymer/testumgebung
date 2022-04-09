@@ -7,5 +7,8 @@
     "dev": "webpack serve --mode=development",
     "build": "webpack --mode=production"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "shared": "1.0.0"
+  }
 }

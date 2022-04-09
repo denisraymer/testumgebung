@@ -1,7 +1,11 @@
 import React from 'react';
 
+import { Button } from 'shared/lib';
+
 export function App({tab}: {tab: string}) {
   return (
-    <h1>Сборщик данных ECHO, {tab}</h1>
+    <Button text="Текст кнопки">
+      {tab}
+    </Button>
   )
 }
