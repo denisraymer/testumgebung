@@ -22,17 +22,11 @@ function createMainConfig(rootDir) {
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
-            options: { compact: false },
-          },
-        }, {
-          test: /\.tsx$/i,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
             options: {
+              compact: false,
               presets: ['@babel/preset-react', '@babel/preset-typescript']
-            }
-          }
+            },
+          },
         }, {
           test: /\.(png|pgn|svg|jpe?g|gif|webp)$/i,
           use: [{ loader: 'file-loader' }],
