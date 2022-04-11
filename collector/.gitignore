@@ -20,9 +20,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 report.*
-
-#storybook
-storybook-static
-
-#IDE
-.idea

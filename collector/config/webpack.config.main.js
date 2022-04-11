@@ -12,7 +12,16 @@ function createMainConfig(rootDir) {
       path: pathResolve('build')
     },
     resolve: {
-      extensions: ['.tsx', '.ts', '.js', '.jsx']
+      extensions: ['.tsx', '.ts', '.js', '.jsx'],
+      alias: {
+        "@assets": pathResolve('./src/assets/'),
+        "@components": pathResolve('./src/components/index.ts'),
+        "@constants": pathResolve('./src/constants/index.ts'),
+        "@atoms": pathResolve('./src/components/atoms/index.ts'),
+        "@types": pathResolve('./src/types/index.ts'),
+        "@hooks": pathResolve('./src/hooks/index.ts'),
+        "@utils": pathResolve('./src/utils/index.ts')
+      }
     },
     module: {
       rules: [

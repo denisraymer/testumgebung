@@ -1,7 +1,7 @@
 {
   "name": "collector",
   "version": "1.0.0",
-  "description": "workspace for the \"Data Collector\"",
+  "description": "Workspace for the \"Data Collector\"",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode=development",

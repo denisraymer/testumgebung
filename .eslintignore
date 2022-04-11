@@ -1,0 +1,5 @@
+# don't ever lint node_modules, build, .idea, craco.config
+node_modules
+storybook-static
+build
+.idea

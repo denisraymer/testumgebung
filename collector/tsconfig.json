@@ -1,31 +1,22 @@
 {
+  "include": ["src"],
+  "extends": "../tsconfig.json",
+  "exclude": ["**/node_modules", "build"],
   "compilerOptions": {
-    "baseUrl": "./src/",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "baseUrl": "./src",
     "paths": {
-      "@assets": ["assets/"],
-      "@components": ["components/index.ts"],
-      "@constants": ["constants/index.ts"],
-      "@atoms": ["components/atoms/index.ts"],
-      "@hooks": ["hooks/index.ts"],
-      "@types": ["types/index.ts"]
-    },
-    "target": "es5",
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+      "@assets": ["assets"],
+      "@components": ["components"],
+      "@constants": ["constants"],
+      "@atoms": ["components/atoms"],
+      "@hooks": ["hooks"],
+      "@utils": ["utils"],
+      "@types": ["types"]
+    }
   },
-  "exclude": ["node_modules", "build"],
-  "include": [
-    "src"
+  "references": [
+    { "path": "../shared" }
   ]
 }
